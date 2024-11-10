@@ -41,12 +41,9 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          // Gambar dengan filter
           Positioned.fill(
             child: _buildImageWidget(),
           ),
-
-          // Selector filter di bagian bawah
           Positioned(
             left: 0,
             right: 0,

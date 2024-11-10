@@ -64,7 +64,7 @@ class _PhotoFilterCarouselState extends State<PhotoFilterCarousel> {
               child: AnimatedContainer(
                 duration: const Duration(milliseconds: 300),
                 curve: Curves.easeInOut,
-                margin: const EdgeInsets.symmetric(horizontal: 1),
+                margin: const EdgeInsets.symmetric(horizontal: 1.5),
                 width: isSelected ? 85 : 70,
                 height: isSelected ? 85 : 70,
                 decoration: BoxDecoration(
@@ -72,7 +72,7 @@ class _PhotoFilterCarouselState extends State<PhotoFilterCarousel> {
                   border: isSelected
                       ? Border.all(
                           color: Colors.white.withOpacity(0.8),
-                          width: 3,
+                          width: 2,
                         )
                       : null,
                   boxShadow: [
@@ -86,7 +86,7 @@ class _PhotoFilterCarouselState extends State<PhotoFilterCarousel> {
                   ],
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(4),
+                  padding: const EdgeInsets.all(1),
                   child: Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
